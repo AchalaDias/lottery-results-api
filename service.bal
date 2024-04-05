@@ -3,8 +3,6 @@ import ballerinax/mongodb;
 
 configurable string host = ?;
 configurable string database = ?;
-configurable string resultHost = "localhost:9091";
-const string creditCollection = "credits";
 const string slotMachineRecordsCollection = "slot_machine_records";
 
 final mongodb:Client mongoDb = check new ({
