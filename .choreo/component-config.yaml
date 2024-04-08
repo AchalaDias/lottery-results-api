@@ -1,0 +1,9 @@
+apiVersion: core.choreo.dev/v1beta1
+kind: ComponentConfig
+spec:
+  inbound:
+    - name: lotty-result-api
+      port: 9092
+      type: REST
+      networkVisibility: Organization
+      schemaFilePath: service_openapi.yaml
