@@ -5,5 +5,5 @@ spec:
     - name: lotty-result-api
       port: 9092
       type: REST
-      networkVisibility: public
+      networkVisibility: Public
       schemaFilePath: service_openapi.yaml
