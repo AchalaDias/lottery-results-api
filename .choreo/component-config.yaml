@@ -6,5 +6,5 @@ spec:
       port: 9092
       type: REST
       context: /
-      networkVisibility: Organization
+      networkVisibility: Public
       schemaFilePath: service_openapi.yaml
