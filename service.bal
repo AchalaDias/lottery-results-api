@@ -28,6 +28,10 @@ service / on new http:Listener(9092) {
         self.Db = check mongoDb->getDatabase(database);
     }
 
+    resource function get health() returns string {
+        return "Lotty results API is Running";
+    }
+
     resource function get slotmachineresults/[string email]() returns SlotMachineReport[]|error {
         if dbType == "mysql" {
             mysql:Client mysqlDb = check getMysqlConnection();
